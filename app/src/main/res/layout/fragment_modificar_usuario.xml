@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".ModificarUsuarioFragment">
+
+    <TextView
+        android:id="@+id/tvUserNameMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jura"
+        android:text="Nombres: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etUserNameMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jura"
+        android:hint="Nombre"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserNameMod" />
+
+    <TextView
+        android:id="@+id/tvUserAgeMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/jura"
+        android:text="Edad"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserNameMod" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/etUserAgeMod"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jura"
+        android:hint="Edad"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserAgeMod" />
+
+    <TextView
+        android:id="@+id/tvSexMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/jura"
+        android:text="Sexo:"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/etUserAgeMod" />
+
+    <LinearLayout
+        android:id="@+id/xd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvSexMod"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioGroup
+            android:id="@+id/rgSexAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/rbHombreAdd"
+            >
+
+            <RadioButton
+                android:id="@+id/rbHombreAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jura"
+                android:text="Hombre"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbMujerAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jura"
+                android:text="Mujer"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#006774"
+        android:fontFamily="@font/jura"
+        android:text="guardar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xd"/>
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="200dp"
+        android:text="Eliminar"
+        android:textSize="20sp"
+        android:fontFamily="@font/jura"
+        android:backgroundTint="#d70000"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnModificar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

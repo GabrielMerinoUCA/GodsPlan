@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:id="@+id/fragUsuario"
+    android:background="#a9412a">
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/tvUserNameRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Nombre:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:fontFamily="@font/jura"
+        />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/tvUserAgeRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Edad:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserNameRV"
+        android:textSize="20sp"
+        android:fontFamily="@font/jura"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvUserSexRV"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Sexo:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserAgeRV"
+        android:textSize="20sp"
+        android:fontFamily="@font/jura"
+        android:layout_marginTop="10dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
